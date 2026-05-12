@@ -53,7 +53,7 @@ body::before{
 .lang-btn{padding:.32rem .9rem;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border:none;background:transparent;color:rgba(244,239,230,.45);font-family:'Jost',sans-serif;transition:all .3s}
 .lang-btn.active{background:var(--gold);color:var(--ink);font-weight:500}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.5rem 4rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;transition:all .4s}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.3rem 4rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1.5rem;transition:all .4s}
 nav.scrolled{background:rgba(6,14,8,.92);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);padding:.7rem 4rem;border-bottom:1px solid var(--border)}
 .nav-logo{text-decoration:none}
 .nav-logo-main{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;letter-spacing:.04em;color:var(--cream);display:block;line-height:1}
@@ -375,12 +375,12 @@ body.ua-mode .nav-links span.ua        { display: inline }
 
 
 <nav id="mainNav">
-  <a class="nav-logo" href="#" style="display:flex;align-items:center;gap:1rem;text-decoration:none">
+  <a class="nav-logo" href="#" style="display:flex;flex-direction:column;align-items:flex-start;gap:.3rem;text-decoration:none">
     <img src="logo.png" alt="Marian Adventure Tours" class="nav-logo-img"
-         style="height:110px;width:110px;object-fit:contain;display:block;cursor:pointer;transition:transform .35s ease;filter:drop-shadow(0 2px 14px rgba(201,168,76,.25))"
-         onmouseover="this.style.transform='scale(1.1)'"
+         style="height:187px;width:187px;object-fit:contain;display:block;cursor:pointer;transition:transform .35s ease;filter:drop-shadow(0 2px 16px rgba(201,168,76,.3))"
+         onmouseover="this.style.transform='scale(1.08)'"
          onmouseout="this.style.transform='scale(1)'">
-    <div style="display:flex;flex-direction:column;justify-content:center">
+    <div style="padding-left:.3rem">
       <span class="nav-logo-main">Marian Adventure</span>
       <span class="nav-logo-sub"><span class="en">Premium Shuttle Tours · Moraine Lake</span><span class="ua">Преміум Тури · Озеро Морейн</span></span>
     </div>
