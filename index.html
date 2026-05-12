@@ -3,7 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marian Adventure Tours — Moraine Lake Shuttle</title>
+
+<!-- SEO -->
+<title>Marian Adventure Tours | Moraine Lake Shuttle from Calgary, Banff, Edmonton</title>
+<meta name="description" content="Private Mercedes Sprinter shuttle tours to Moraine Lake from Calgary, Edmonton, Red Deer, Banff & Canmore. Small groups up to 13. Also tours to Jasper, Waterton Lakes & Drumheller. Book online!">
+<meta name="keywords" content="Moraine Lake shuttle, Moraine Lake tour, Banff tour, Calgary to Moraine Lake, Edmonton to Moraine Lake, Banff shuttle, Jasper tour, Waterton Lakes tour, Drumheller tour, Alberta tours, Mercedes Sprinter tour Alberta, private shuttle Banff, small group tour Moraine Lake">
+<meta name="author" content="Marian Adventure Tours">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://marianadventuretours.com">
+
+<!-- Open Graph (Facebook, Instagram preview) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marianadventuretours.com">
+<meta property="og:title" content="Marian Adventure Tours | Moraine Lake Shuttle Tours Alberta">
+<meta property="og:description" content="Private Mercedes Sprinter tours to Moraine Lake, Jasper, Waterton & Drumheller. Small groups up to 13 from Calgary, Edmonton, Banff & more.">
+<meta property="og:image" content="https://marianadventuretours.com/IMG_0960.JPG">
+<meta property="og:locale" content="en_CA">
+
+<!-- Twitter/X preview -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marian Adventure Tours | Moraine Lake Shuttle">
+<meta name="twitter:description" content="Private luxury shuttle tours across Alberta. Moraine Lake, Jasper, Waterton & Drumheller.">
+<meta name="twitter:image" content="https://marianadventuretours.com/IMG_0960.JPG">
+
+<!-- Geo tags -->
+<meta name="geo.region" content="CA-AB">
+<meta name="geo.placename" content="Banff, Alberta, Canada">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#060e0b;--deep:#0a1610;--forest:#111f16;--pine:#182c1e;--gold:#c9a84c;--gold-lt:#e8c96a;--cream:#f4efe6;--glass:rgba(255,255,255,.04);--border:rgba(201,168,76,.18);--r:20px}
@@ -962,7 +987,8 @@ function sendBooking(channel){
     window.open('https://t.me/+18259891322?text=' + msgEncoded, '_blank');
   } else if(channel === 'email'){
     var subject = encodeURIComponent('Tour Booking Request — ' + city);
-    window.open('mailto:marianadventuretours@gmail.com?subject=' + subject + '&body=' + msgEncoded, '_blank');
+    var body = encodeURIComponent(msgPlain);
+    window.location.href = 'mailto:marianadventuretours@gmail.com?subject=' + subject + '&body=' + body;
   }
 }
 
