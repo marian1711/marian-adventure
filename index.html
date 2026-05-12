@@ -53,7 +53,7 @@ body::before{
 .lang-btn{padding:.32rem .9rem;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border:none;background:transparent;color:rgba(244,239,230,.45);font-family:'Jost',sans-serif;transition:all .3s}
 .lang-btn.active{background:var(--gold);color:var(--ink);font-weight:500}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.3rem 4rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;transition:all .4s;height:120px}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.2rem 2rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;transition:all .4s;height:185px}
 nav.scrolled{background:rgba(6,14,8,.92);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);padding:.7rem 4rem;border-bottom:1px solid var(--border)}
 .nav-logo{text-decoration:none}
 .nav-logo-main{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;letter-spacing:.04em;color:var(--cream);display:block;line-height:1}
@@ -68,7 +68,7 @@ nav.scrolled{background:rgba(6,14,8,.92);-webkit-backdrop-filter:blur(24px);back
 .hero-photo{position:absolute;top:0;right:0;bottom:0;left:0;background:url('IMG_0960.JPG') center/cover no-repeat;-webkit-animation:heroZoom 18s ease-out forwards;animation:heroZoom 18s ease-out forwards}
 @-webkit-keyframes heroZoom{from{-webkit-transform:scale(1.08)}to{-webkit-transform:scale(1.0)}}@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1.0)}}
 .hero-overlay{position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(to top,rgba(6,14,8,.97) 0%,rgba(6,14,8,.55) 35%,rgba(6,14,8,.1) 65%,rgba(6,14,8,.28) 100%),linear-gradient(to right,rgba(6,14,8,.6) 0%,transparent 70%)}
-.hero-content{position:relative;z-index:5;max-width:680px;padding-top:120px}
+.hero-content{position:relative;z-index:5;max-width:680px;padding-top:185px}
 .hero-eyebrow{display:flex;align-items:center;gap:1rem;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem;animation:fadeUp 1s ease both;padding-top:0}
 .eyebrow-line{flex:0 0 32px;height:1px;background:var(--gold);opacity:.6}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5vw,4.5rem);font-weight:300;line-height:1.15;letter-spacing:-.01em;margin-bottom:.9rem;animation:fadeUp 1s .15s ease both}
@@ -375,11 +375,15 @@ body.ua-mode .nav-links span.ua        { display: inline }
 
 
 <nav id="mainNav">
-  <a class="nav-logo" href="#" style="display:flex;flex-direction:column;align-items:center;text-decoration:none">
+  <a class="nav-logo" href="#" style="display:flex;flex-direction:row;align-items:center;gap:1.2rem;text-decoration:none">
     <img src="logo.png" alt="Marian Adventure Tours" class="nav-logo-img"
-         style="height:108px;width:108px;object-fit:contain;display:block;cursor:pointer;transition:transform .35s ease;filter:drop-shadow(0 2px 16px rgba(201,168,76,.3))"
-         onmouseover="this.style.transform='scale(1.1)'"
+         style="height:173px;width:173px;object-fit:contain;display:block;cursor:pointer;transition:transform .35s ease;filter:drop-shadow(0 2px 16px rgba(201,168,76,.3))"
+         onmouseover="this.style.transform='scale(1.25)'"
          onmouseout="this.style.transform='scale(1)'">
+    <div style="display:flex;flex-direction:column;gap:.3rem">
+      <span class="nav-logo-main" style="font-size:1.5rem">Marian Adventure Tours</span>
+      <span class="nav-logo-sub" style="font-size:.7rem">MORAINE LAKE · VALLEY OF TEN PEAKS · BANFF NATIONAL PARK</span>
+    </div>
   </a>
   <ul class="nav-links">
     <li><a href="#routes"><span class="en">Routes</span><span class="ua">Маршрути</span></a></li>
