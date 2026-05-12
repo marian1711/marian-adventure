@@ -40,7 +40,7 @@ body{font-family:'Jost',sans-serif;background:var(--ink);color:var(--cream);over
 body::before{
   content:'';
   position:fixed;
-  inset:0;
+  top:0;right:0;bottom:0;left:0;
   z-index:-1;
   background:
     url('IMG_0960.JPG') center/cover no-repeat;
@@ -65,9 +65,9 @@ nav.scrolled{background:rgba(6,14,8,.92);-webkit-backdrop-filter:blur(24px);back
 .nav-book:hover{background:var(--gold) !important;color:var(--ink) !important}
 
 .hero{height:100vh;height:-webkit-fill-available;min-height:500px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4rem 3.5rem;overflow:hidden}
-.hero-photo{position:absolute;inset:0;background:url('IMG_0960.JPG') center/cover no-repeat;-webkit-animation:heroZoom 18s ease-out forwards;animation:heroZoom 18s ease-out forwards}
+.hero-photo{position:absolute;top:0;right:0;bottom:0;left:0;background:url('IMG_0960.JPG') center/cover no-repeat;-webkit-animation:heroZoom 18s ease-out forwards;animation:heroZoom 18s ease-out forwards}
 @-webkit-keyframes heroZoom{from{-webkit-transform:scale(1.08)}to{-webkit-transform:scale(1.0)}}@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1.0)}}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(6,14,8,.97) 0%,rgba(6,14,8,.55) 35%,rgba(6,14,8,.1) 65%,rgba(6,14,8,.28) 100%),linear-gradient(to right,rgba(6,14,8,.6) 0%,transparent 70%)}
+.hero-overlay{position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(to top,rgba(6,14,8,.97) 0%,rgba(6,14,8,.55) 35%,rgba(6,14,8,.1) 65%,rgba(6,14,8,.28) 100%),linear-gradient(to right,rgba(6,14,8,.6) 0%,transparent 70%)}
 .hero-content{position:relative;z-index:5;max-width:680px}
 .hero-eyebrow{display:flex;align-items:center;gap:1rem;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem;animation:fadeUp 1s ease both}
 .eyebrow-line{flex:0 0 32px;height:1px;background:var(--gold);opacity:.6}
@@ -1025,22 +1025,26 @@ document.addEventListener('DOMContentLoaded', function(){
     var bod = encodeURIComponent(msgP);
     el.href = 'mailto:marianadventuretours@gmail.com?subject='+sub+'&body='+bod;
   });
-};
-}
+});
 
 function setLang(l){
-  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
-  document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');
+  document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.remove('active');});
+  document.querySelector('.lang-btn[onclick="setLang(\''+l+'\')"]').classList.add('active');
   document.body.classList.toggle('ua-mode', l==='ua');
 }
 
-const obs = new IntersectionObserver(es=>{
-  es.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
-},{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+try {
+  var obs = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); });
+  },{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
+} catch(e) {
+  document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible');});
+}
 
-window.addEventListener('scroll',()=>{
-  document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY>60);
+window.addEventListener('scroll', function(){
+  var nav = document.getElementById('mainNav');
+  if(nav) nav.classList.toggle('scrolled', window.scrollY > 60);
 });
 
 // Animal pins smooth scroll
