@@ -894,15 +894,15 @@ body.ua-mode .nav-links span.ua        { display: inline }
         <div style="margin-top:.5rem">
           <div style="font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,239,230,.38);margin-bottom:.7rem;font-family:'Jost',sans-serif"><span class="en">Send via</span><span class="ua">Надіслати через</span></div>
           <div style="display:flex;flex-direction:column;gap:.6rem">
-            <button class="form-submit" onclick="sendBooking('wa')" style="background:rgba(37,211,102,.85);display:flex;align-items:center;justify-content:center;gap:.6rem">
+            <button class="form-submit" onclick="sendBooking('wa')" onmouseenter="prepEmail()" style="background:rgba(37,211,102,.85);display:flex;align-items:center;justify-content:center;gap:.6rem">
               💬 <span class="en">Book via WhatsApp</span><span class="ua">Забронювати через WhatsApp</span>
             </button>
             <button class="form-submit" onclick="sendBooking('tg')" style="background:rgba(41,182,246,.85);display:flex;align-items:center;justify-content:center;gap:.6rem">
               ✈️ <span class="en">Book via Telegram</span><span class="ua">Забронювати через Telegram</span>
             </button>
-            <button class="form-submit" onclick="sendBooking('email')" style="background:rgba(201,168,76,.9);display:flex;align-items:center;justify-content:center;gap:.6rem">
+            <a id="emailBookBtn" href="mailto:marianadventuretours@gmail.com" class="form-submit" style="background:rgba(201,168,76,.9);display:flex;align-items:center;justify-content:center;gap:.6rem;text-decoration:none;cursor:pointer">
               📧 <span class="en">Book via Email</span><span class="ua">Забронювати через Email</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -985,11 +985,47 @@ function sendBooking(channel){
     window.open('https://wa.me/18259891322?text=' + msgEncoded, '_blank');
   } else if(channel === 'tg'){
     window.open('https://t.me/+18259891322?text=' + msgEncoded, '_blank');
-  } else if(channel === 'email'){
-    var subject = encodeURIComponent('Tour Booking Request — ' + city);
-    var body = encodeURIComponent(msgPlain);
-    window.location.href = 'mailto:marianadventuretours@gmail.com?subject=' + subject + '&body=' + body;
   }
+}
+
+function prepEmail(){
+  // pre-build mailto on hover so click works instantly
+  var first = document.getElementById('bkFirst').value.trim();
+  var city  = document.getElementById('bkCity').value;
+  var date  = document.getElementById('bkDate').value;
+  var guests= document.getElementById('bkGuests').value;
+  var last  = document.getElementById('bkLast').value.trim();
+  var email = document.getElementById('bkEmail').value.trim();
+  if(!first || !city || !date) return;
+  var msgPlain2 = "Hello! I'd like to book a tour:\nName: "+first+" "+last+"\nEmail: "+(email||'—')+"\nTour: "+city+"\nDate: "+date+"\nGuests: "+guests;
+  var sub = encodeURIComponent('Tour Booking — '+city);
+  var bod = encodeURIComponent(msgPlain2);
+  var el = document.getElementById('emailBookBtn');
+  if(el) el.href = 'mailto:marianadventuretours@gmail.com?subject='+sub+'&body='+bod;
+}
+
+// Also update on email link click
+document.addEventListener('DOMContentLoaded', function(){
+  var el = document.getElementById('emailBookBtn');
+  if(!el) return;
+  el.addEventListener('click', function(e){
+    var first = document.getElementById('bkFirst').value.trim();
+    var city  = document.getElementById('bkCity').value;
+    var date  = document.getElementById('bkDate').value;
+    if(!first || !city || !date){
+      e.preventDefault();
+      alert('Please fill in: Name, City and Date.');
+      return;
+    }
+    var last  = document.getElementById('bkLast').value.trim();
+    var email = document.getElementById('bkEmail').value.trim();
+    var guests= document.getElementById('bkGuests').value;
+    var msgP = "Hello! I'd like to book a tour:\nName: "+first+" "+last+"\nEmail: "+(email||'—')+"\nTour: "+city+"\nDate: "+date+"\nGuests: "+guests;
+    var sub = encodeURIComponent('Tour Booking — '+city);
+    var bod = encodeURIComponent(msgP);
+    el.href = 'mailto:marianadventuretours@gmail.com?subject='+sub+'&body='+bod;
+  });
+};
 }
 
 function setLang(l){
