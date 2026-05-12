@@ -33,8 +33,8 @@
 <style>
 :root{--ink:#060e0b;--deep:#0a1610;--forest:#111f16;--pine:#182c1e;--gold:#c9a84c;--gold-lt:#e8c96a;--cream:#f4efe6;--glass:rgba(255,255,255,.04);--border:rgba(201,168,76,.18);--r:20px}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Jost',sans-serif;background:var(--ink);color:var(--cream);overflow-x:hidden}
+html{scroll-behavior:smooth;height:-webkit-fill-available}
+body{font-family:'Jost',sans-serif;background:var(--ink);color:var(--cream);overflow-x:hidden;min-height:100vh;min-height:-webkit-fill-available}
 
 /* Moraine Lake full-site background */
 body::before{
@@ -43,7 +43,7 @@ body::before{
   inset:0;
   z-index:-1;
   background:
-    url('IMG_0960.JPG') center/cover no-repeat fixed;
+    url('IMG_0960.JPG') center/cover no-repeat;
   opacity:0.07;
   pointer-events:none;
 }
@@ -54,7 +54,7 @@ body::before{
 .lang-btn.active{background:var(--gold);color:var(--ink);font-weight:500}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 4rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;transition:all .4s}
-nav.scrolled{background:rgba(6,14,8,.92);backdrop-filter:blur(24px);padding:.7rem 4rem;border-bottom:1px solid var(--border)}
+nav.scrolled{background:rgba(6,14,8,.92);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);padding:.7rem 4rem;border-bottom:1px solid var(--border)}
 .nav-logo{text-decoration:none}
 .nav-logo-main{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;letter-spacing:.04em;color:var(--cream);display:block;line-height:1}
 .nav-logo-sub{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:3px;display:block}
@@ -64,9 +64,9 @@ nav.scrolled{background:rgba(6,14,8,.92);backdrop-filter:blur(24px);padding:.7re
 .nav-book{border:1px solid var(--gold) !important;color:var(--gold) !important;padding:.45rem 1.3rem !important;border-radius:50px !important;transition:all .3s !important;white-space:nowrap}
 .nav-book:hover{background:var(--gold) !important;color:var(--ink) !important}
 
-.hero{height:100vh;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4rem 3.5rem;overflow:hidden}
-.hero-photo{position:absolute;inset:0;background:url('IMG_0960.JPG') center/cover no-repeat;animation:heroZoom 18s ease-out forwards}
-@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1.0)}}
+.hero{height:100vh;height:-webkit-fill-available;min-height:500px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4rem 3.5rem;overflow:hidden}
+.hero-photo{position:absolute;inset:0;background:url('IMG_0960.JPG') center/cover no-repeat;-webkit-animation:heroZoom 18s ease-out forwards;animation:heroZoom 18s ease-out forwards}
+@-webkit-keyframes heroZoom{from{-webkit-transform:scale(1.08)}to{-webkit-transform:scale(1.0)}}@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1.0)}}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(6,14,8,.97) 0%,rgba(6,14,8,.55) 35%,rgba(6,14,8,.1) 65%,rgba(6,14,8,.28) 100%),linear-gradient(to right,rgba(6,14,8,.6) 0%,transparent 70%)}
 .hero-content{position:relative;z-index:5;max-width:680px}
 .hero-eyebrow{display:flex;align-items:center;gap:1rem;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem;animation:fadeUp 1s ease both}
