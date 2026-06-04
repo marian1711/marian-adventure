@@ -175,7 +175,22 @@ h2 em{font-style:italic;color:var(--gold-lt)}
 }
 
 
-/* ── INTERIOR DETAILS ── */
+
+/* ── VEHICLE GALLERIES ── */
+.veh-section-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:500;color:var(--gold-lt);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.veh-gallery-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.veh-gallery-3 > img{width:100%;height:230px;object-fit:cover;border-radius:14px;border:1px solid var(--border);transition:transform .5s}
+.veh-gallery-3 > img:hover{transform:scale(1.03)}
+.veh-card{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--border)}
+.veh-card img{width:100%;height:230px;object-fit:cover;display:block;transition:transform .5s}
+.veh-card:hover img{transform:scale(1.05)}
+.veh-card-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(6,14,8,.95),transparent);padding:1.4rem .9rem .8rem;font-size:.85rem;color:var(--cream);display:flex;align-items:center;gap:.5rem}
+@media(max-width:960px){
+  .veh-gallery-3{grid-template-columns:1fr}
+  .veh-gallery-3 > img,.veh-card img{height:200px}
+}
+
+/* ── INTERIOR DETAILS (legacy) ── */
 .interior-details{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .int-card{border-radius:14px;overflow:hidden;border:1px solid var(--border);position:relative}
 .int-card img{width:100%;height:200px;object-fit:cover;display:block;transition:transform .5s}
@@ -480,8 +495,37 @@ footer{background:var(--ink);border-top:1px solid var(--border);padding:4rem 4re
       </div>
       <div class="comfort-photos reveal d1">
         <img src="van1.jpg" alt="Marian Adventure Tours Mercedes Sprinter at Two Jack Lake Banff">
-        <img src="interior-seats.jpg" alt="Genuine leather seats inside Mercedes Sprinter">
-        <img src="interior-usbc.jpg" alt="Type-C charging port in Sprinter">
+        <img src="van2.jpg" alt="Sprinter by emerald lake in Banff">
+        <img src="van4.jpg" alt="Mercedes Sprinter front view at Abraham Lake">
+      </div>
+    </div>
+
+    <!-- EXTERIOR GALLERY -->
+    <div class="veh-section reveal" style="margin-top:3rem">
+      <div class="veh-section-title">🚐 <span class="en">Exterior</span><span class="ua">Зовні</span></div>
+      <div class="veh-gallery-3">
+        <img src="van1.jpg" alt="Sprinter at Two Jack Lake">
+        <img src="van3.jpg" alt="Sprinter side with logo by turquoise lake">
+        <img src="van4.jpg" alt="Sprinter front at Abraham Lake">
+      </div>
+    </div>
+
+    <!-- INTERIOR GALLERY -->
+    <div class="veh-section reveal" style="margin-top:2rem">
+      <div class="veh-section-title">🛋 <span class="en">Interior & Comfort</span><span class="ua">Салон та комфорт</span></div>
+      <div class="veh-gallery-3">
+        <div class="veh-card">
+          <img src="interior-seats.jpg" alt="Genuine leather seats">
+          <div class="veh-card-label">🛋 <span class="en">Genuine Leather Seats</span><span class="ua">Шкіряні сидіння</span></div>
+        </div>
+        <div class="veh-card">
+          <img src="interior-usbc.jpg" alt="Type-C charging port">
+          <div class="veh-card-label">🔌 <span class="en">Type-C Charging</span><span class="ua">Зарядка Type-C</span></div>
+        </div>
+        <div class="veh-card">
+          <img src="interior-cupholder.jpg" alt="Cup holders">
+          <div class="veh-card-label">🥤 <span class="en">Cup Holders</span><span class="ua">Підстаканники</span></div>
+        </div>
       </div>
     </div>
 

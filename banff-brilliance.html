@@ -318,6 +318,17 @@ footer{background:var(--ink);border-top:1px solid var(--border);padding:4rem 4re
 .price-card .note{font-size:.8rem;color:var(--gold-lt);margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
 .price-card .feat{display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:rgba(244,239,230,.75);padding:.4rem 0}
 .price-card .btn-gold{width:100%;text-align:center;margin-top:1.5rem;display:block}
+
+/* ── 2-COLUMN GALLERY ── */
+.gallery-two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.gallery-col{display:flex;flex-direction:column;gap:.8rem}
+.gallery-col-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;color:var(--gold-lt);margin-bottom:.3rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.gallery-col img{width:100%;height:240px;object-fit:cover;border-radius:12px;border:1px solid var(--border);transition:transform .5s}
+.gallery-col img:hover{transform:scale(1.02)}
+@media(max-width:960px){
+  .gallery-two-col{grid-template-columns:1fr;gap:2rem}
+  .gallery-col img{height:200px}
+}
 .tour-gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:180px;gap:.8rem;margin-top:3rem}
 .tour-gallery img{width:100%;height:100%;object-fit:cover;border-radius:10px;cursor:pointer;transition:transform .5s}
 .tour-gallery img:hover{transform:scale(1.03)}
@@ -469,14 +480,20 @@ footer{background:var(--ink);border-top:1px solid var(--border);padding:4rem 4re
     </div>
     <div class="info-block reveal" style="margin-top:3rem">
       <h3><span class="ico">📸</span> <span class="en">Gallery</span><span class="ua">Галерея</span></h3>
-      <div class="tour-gallery">
-        <img src="IMG_0960.JPG" class="wide tall" alt="Moraine Lake turquoise water Valley of Ten Peaks">
-        <img src="IMG_0945.JPG" alt="Moraine Lake panorama">
-        <img src="IMG_0921.JPG" alt="Moraine Lake mountains">
-        <img src="IMG_0940.JPG" class="wide" alt="Canoe on Moraine Lake turquoise water">
-        <img src="lakelouise2.jpg" alt="Lake Louise turquoise water">
-        <img src="lakelouise1.jpg" alt="Lake Louise sunrise canoes">
-        <img src="lakelouise3.jpg" class="wide" alt="Lake Louise golden sunrise wildflowers">
+      <div class="gallery-two-col">
+        <div class="gallery-col">
+          <div class="gallery-col-title">⭐ Moraine Lake</div>
+          <img src="IMG_0960.JPG" alt="Moraine Lake turquoise water Valley of Ten Peaks">
+          <img src="IMG_0945.JPG" alt="Moraine Lake panorama">
+          <img src="IMG_0940.JPG" alt="Canoe on Moraine Lake turquoise water">
+          <img src="IMG_0921.JPG" alt="Moraine Lake mountains">
+        </div>
+        <div class="gallery-col">
+          <div class="gallery-col-title">💎 Lake Louise</div>
+          <img src="lakelouise2.jpg" alt="Lake Louise turquoise water">
+          <img src="lakelouise1.jpg" alt="Lake Louise sunrise canoes">
+          <img src="lakelouise3.jpg" alt="Lake Louise golden sunrise wildflowers">
+        </div>
       </div>
     </div>
   </div>
