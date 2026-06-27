@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Marian Adventure Tours — Canadian Rockies Tour Company</title>
+<meta name="description" content="Meet the team behind Marian Adventure Tours. Founded by passionate travelers with tourism degrees, we share the beauty of the Canadian Rockies through premium small-group and private tours from Edmonton, Red Deer, Calgary, Canmore & Banff.">
+<meta name="keywords" content="about Marian Adventure Tours, Canadian Rockies tour company, Alberta tour operator, Banff tour guides, tourism professionals Alberta">
+<meta name="author" content="Marian Adventure Tours">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://marianadventuretours.com/about.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marianadventuretours.com/about.html">
+<meta property="og:title" content="About Us | Marian Adventure Tours">
+<meta property="og:description" content="Meet the passionate team behind Marian Adventure Tours — sharing the Canadian Rockies with the world.">
+<meta property="og:image" content="https://marianadventuretours.com/IMG_0960.JPG">
+<meta property="og:locale" content="en_CA">
+<meta name="geo.region" content="CA-AB">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#060e0b;--deep:#0a1610;--forest:#111f16;--pine:#182c1e;
+  --gold:#c9a84c;--gold-lt:#e8c96a;--cream:#f4efe6;
+  --glass:rgba(255,255,255,.04);--border:rgba(201,168,76,.18);--r:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;height:-webkit-fill-available}
+body{font-family:'Jost',sans-serif;background:var(--ink);color:var(--cream);overflow-x:hidden;min-height:100vh;min-height:-webkit-fill-available;line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+/* ── LANGUAGE SYSTEM ── */
+.ua{display:none}span.ua{display:none}div.ua{display:none}p.ua{display:none}
+body.ua-mode .en{display:none}
+body.ua-mode span.en{display:none}
+body.ua-mode div.en{display:none}
+body.ua-mode p.en{display:none}
+body.ua-mode .ua{display:block}
+body.ua-mode span.ua{display:inline}
+body.ua-mode div.ua{display:block}
+body.ua-mode p.ua{display:block}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.5rem 4rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;transition:all .4s}
+nav.scrolled{background:rgba(6,14,8,.92);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);padding:.3rem 4rem;border-bottom:1px solid var(--border)}
+.nav-logo{display:flex;align-items:center;gap:.9rem}
+.nav-logo img{height:90px;width:90px;object-fit:contain;cursor:pointer;transition:transform .35s ease;filter:drop-shadow(0 2px 14px rgba(201,168,76,.25))}
+.nav-logo img:hover{transform:scale(1.12)}
+.nav-logo-text .main{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;letter-spacing:.04em;color:var(--cream);display:block;line-height:1}
+.nav-logo-text .sub{font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-top:4px;display:block}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
+.nav-links a{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,239,230,.55);transition:color .3s}
+.nav-links a:hover{color:var(--cream)}
+.nav-book{border:1px solid var(--gold);color:var(--gold);padding:.5rem 1.4rem;border-radius:50px;transition:all .3s;white-space:nowrap}
+.nav-book:hover{background:var(--gold);color:var(--ink)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.lang-wrap{display:flex;border:1px solid var(--border);border-radius:50px;overflow:hidden;background:rgba(6,14,8,.6)}
+.lang-btn{padding:.32rem .9rem;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border:none;background:transparent;color:rgba(244,239,230,.45);font-family:'Jost',sans-serif;transition:all .3s}
+.lang-btn.active{background:var(--gold);color:var(--ink);font-weight:500}
+.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:42px;height:42px;cursor:pointer;padding:8px;border-radius:10px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2)}
+.hamburger span{width:18px;height:1.5px;background:var(--gold);border-radius:2px;display:block;transition:all .3s;transform-origin:center}
+.hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+/* ── MOBILE MENU ── */
+.mobile-menu{position:fixed;inset:0;background:rgba(6,14,8,.98);z-index:190;transform:translateY(-100%);transition:transform .4s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;padding:120px 28px 28px}
+.mobile-menu.open{transform:translateY(0)}
+.mobile-menu a.mm-link{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:.5px solid rgba(201,168,76,.12);font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:rgba(244,239,230,.85);transition:all .2s}
+.mobile-menu a.mm-link:hover{color:var(--gold-lt);padding-left:6px}
+.mm-arr{font-size:.9rem;color:rgba(201,168,76,.4)}
+
+/* ── HERO ── */
+.hero{height:100vh;height:-webkit-fill-available;min-height:600px;position:relative;display:flex;flex-direction:column;justify-content:center;padding:0 4rem;overflow:hidden}
+.hero-photo{position:absolute;top:0;right:0;bottom:0;left:0;background:url('IMG_0960.JPG') center/cover no-repeat;-webkit-animation:heroZoom 20s ease-out forwards;animation:heroZoom 20s ease-out forwards}
+@-webkit-keyframes heroZoom{from{-webkit-transform:scale(1.08)}to{-webkit-transform:scale(1)}}
+@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero-overlay{position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(to top,rgba(6,14,8,.95) 0%,rgba(6,14,8,.4) 45%,rgba(6,14,8,.25) 100%),linear-gradient(to right,rgba(6,14,8,.7) 0%,transparent 70%)}
+.hero-content{position:relative;z-index:5;max-width:760px;padding-top:90px}
+.hero-eyebrow{display:flex;align-items:center;gap:1rem;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;animation:fadeUp 1s ease both}
+.eyebrow-line{flex:0 0 36px;height:1px;background:var(--gold);opacity:.6}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5.5vw,4.8rem);font-weight:300;line-height:1.08;letter-spacing:-.01em;margin-bottom:1.2rem;animation:fadeUp 1s .15s ease both}
+.hero h1 em{font-style:italic;color:var(--gold-lt)}
+.hero h1 strong{font-weight:600}
+.hero-sub{font-size:1.05rem;font-weight:300;line-height:1.7;color:rgba(244,239,230,.78);max-width:560px;margin-bottom:1.8rem;animation:fadeUp 1s .3s ease both}
+.hero-badges{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:2.2rem;animation:fadeUp 1s .45s ease both}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:50px;padding:.5rem 1rem;font-size:.74rem;letter-spacing:.04em;color:rgba(244,239,230,.85);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp 1s .6s ease both}
+.btn-gold{background:var(--gold);color:var(--ink);padding:1rem 2.4rem;border-radius:50px;font-size:.82rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;transition:all .3s;box-shadow:0 8px 32px rgba(201,168,76,.3);white-space:nowrap;cursor:pointer;border:none;font-family:'Jost',sans-serif}
+.btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 14px 40px rgba(201,168,76,.4)}
+.btn-outline{border:1px solid rgba(244,239,230,.3);color:rgba(244,239,230,.85);padding:1rem 2.4rem;border-radius:50px;font-size:.82rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;transition:all .3s;white-space:nowrap;cursor:pointer;background:transparent;font-family:'Jost',sans-serif}
+.btn-outline:hover{border-color:var(--cream);color:var(--cream);background:rgba(255,255,255,.05)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@-webkit-keyframes fadeUp{from{opacity:0;-webkit-transform:translateY(30px)}to{opacity:1;-webkit-transform:translateY(0)}}
+
+/* ── SECTIONS ── */
+.section{padding:6rem 4rem;position:relative}
+.section-inner{max-width:1240px;margin:0 auto}
+.label-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.label-tag::before{content:'';width:24px;height:1px;background:var(--gold)}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.1;letter-spacing:-.01em}
+h2 em{font-style:italic;color:var(--gold-lt)}
+.section-intro{font-size:.9rem;font-weight:300;color:rgba(244,239,230,.6);max-width:540px;margin-top:.6rem;line-height:1.55}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* ── FEATURED TOURS ── */
+.tours-head{text-align:center;margin-bottom:1.4rem;display:flex;flex-direction:column;align-items:center}
+.tours-head .label-tag{justify-content:center}
+.tour-card{position:relative;border-radius:var(--r);overflow:hidden;margin-bottom:1.8rem;min-height:380px;display:flex;align-items:flex-end;border:1px solid var(--border);transition:transform .5s,box-shadow .5s}
+.tour-card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.tour-card-bg{position:absolute;top:0;right:0;bottom:0;left:0;background-size:cover;background-position:center;transition:transform .8s ease}
+.tour-card:hover .tour-card-bg{transform:scale(1.06)}
+.tour-card-overlay{position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(to top,rgba(6,14,8,.96) 0%,rgba(6,14,8,.55) 45%,rgba(6,14,8,.15) 100%)}
+.tour-card-content{position:relative;z-index:3;padding:1.8rem;width:100%}
+.tour-num{font-family:'Cormorant Garamond',serif;font-size:.85rem;color:var(--gold);letter-spacing:.2em;margin-bottom:.4rem}
+.tour-card h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3.2vw,2.6rem);font-weight:400;line-height:1;margin-bottom:.4rem}
+.tour-tagline{font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold-lt);margin-bottom:1rem}
+.tour-route{display:flex;align-items:center;flex-wrap:wrap;gap:.4rem;font-size:.72rem;letter-spacing:.04em;color:rgba(244,239,230,.7);margin-bottom:1rem}
+.tour-route .arrow{color:var(--gold);font-size:.9rem}
+.tour-highlights{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.3rem}
+.tour-highlights span{background:rgba(255,255,255,.07);border:1px solid var(--border);border-radius:50px;padding:.28rem .75rem;font-size:.68rem;color:rgba(244,239,230,.85);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.tour-cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:var(--ink);padding:.7rem 1.5rem;border-radius:50px;font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;transition:all .3s}
+.tour-cta:hover{background:var(--gold-lt);gap:1rem}
+
+/* alternating layout for desktop */
+@media(min-width:961px){
+  .tour-card{min-height:410px}
+  .tour-card.flip{align-items:flex-end;justify-content:flex-end}
+  .tour-card.flip .tour-card-overlay{background:linear-gradient(to top,rgba(6,14,8,.96) 0%,rgba(6,14,8,.5) 45%,rgba(6,14,8,.1) 100%),linear-gradient(to left,rgba(6,14,8,.65) 0%,transparent 55%)}
+  .tour-card .tour-card-overlay{background:linear-gradient(to top,rgba(6,14,8,.96) 0%,rgba(6,14,8,.5) 45%,rgba(6,14,8,.1) 100%),linear-gradient(to right,rgba(6,14,8,.65) 0%,transparent 55%)}
+  .tour-card-content{max-width:620px}
+  .tour-card.flip .tour-card-content{margin-left:auto;text-align:right}
+  .tour-card.flip .tour-route,.tour-card.flip .tour-highlights{justify-content:flex-end}
+}
+
+/* ── COMFORT / VEHICLE ── */
+.comfort{background:var(--deep)}
+.comfort-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.comfort-photos{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:1rem}
+.comfort-photos img{width:100%;height:100%;object-fit:cover;border-radius:14px;border:1px solid var(--border)}
+.comfort-photos img:first-child{grid-column:1/-1;height:280px}
+.comfort-photos img:not(:first-child){height:180px}
+.comfort-features{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}
+.comfort-feature{display:flex;align-items:center;gap:.8rem;background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:.9rem 1.1rem;font-size:.85rem;color:rgba(244,239,230,.85)}
+.comfort-feature .ico{font-size:1.3rem;flex-shrink:0}
+
+
+/* ── VAN GALLERY ── */
+.van-gallery-full{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}
+.van-gallery-full img{width:100%;height:200px;object-fit:cover;border-radius:12px;border:1px solid var(--border);transition:transform .5s}
+.van-gallery-full img:hover{transform:scale(1.03)}
+@media(max-width:960px){
+  .van-gallery-full{grid-template-columns:1fr 1fr}
+  .van-gallery-full img{height:150px}
+}
+
+
+
+/* ── VEHICLE GALLERIES ── */
+.veh-section-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:500;color:var(--gold-lt);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.veh-gallery-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.veh-gallery-3 > img{width:100%;height:230px;object-fit:cover;border-radius:14px;border:1px solid var(--border);transition:transform .5s}
+.veh-gallery-3 > img:hover{transform:scale(1.03)}
+.veh-card{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--border)}
+.veh-card img{width:100%;height:230px;object-fit:cover;display:block;transition:transform .5s}
+.veh-card:hover img{transform:scale(1.05)}
+.veh-card-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(6,14,8,.95),transparent);padding:1.4rem .9rem .8rem;font-size:.85rem;color:var(--cream);display:flex;align-items:center;gap:.5rem}
+@media(max-width:960px){
+  .veh-gallery-3{grid-template-columns:1fr}
+  .veh-gallery-3 > img,.veh-card img{height:200px}
+}
+
+/* ── INTERIOR DETAILS (legacy) ── */
+.interior-details{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.int-card{border-radius:14px;overflow:hidden;border:1px solid var(--border);position:relative}
+.int-card img{width:100%;height:200px;object-fit:cover;display:block;transition:transform .5s}
+.int-card:hover img{transform:scale(1.05)}
+.int-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(6,14,8,.95),transparent);padding:1.2rem .9rem .7rem;font-size:.82rem;color:var(--cream);display:flex;align-items:center;gap:.5rem}
+@media(max-width:960px){
+  .interior-details{grid-template-columns:1fr}
+  .int-card img{height:180px}
+}
+
+/* ── PRIVATE TOURS ── */
+.private{position:relative;overflow:hidden}
+.private-bg{position:absolute;top:0;right:0;bottom:0;left:0;background:url('IMG_0991.jpg') center/cover no-repeat;opacity:.18}
+.private-overlay{position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(135deg,rgba(6,14,8,.95),rgba(17,31,22,.9))}
+.private-inner{position:relative;z-index:3;max-width:900px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center}
+.private-inner .label-tag{justify-content:center}
+.private-dest{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin:2rem 0}
+.private-dest span{background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:50px;padding:.5rem 1.1rem;font-size:.78rem;color:rgba(244,239,230,.85)}
+.private-benefits{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem 2.5rem;margin:1.5rem 0 2.5rem}
+.private-benefit{display:flex;align-items:center;gap:.6rem;font-size:.85rem;color:rgba(244,239,230,.7)}
+.private-benefit .chk{color:var(--gold);font-weight:600}
+
+/* ── WHY CHOOSE US ── */
+.why{background:var(--deep)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3rem}
+.why-item{background:var(--glass);border:1px solid var(--border);border-radius:14px;padding:1.6rem 1.4rem;transition:all .4s}
+.why-item:hover{border-color:rgba(201,168,76,.45);transform:translateY(-4px);background:rgba(201,168,76,.05)}
+.why-chk{width:34px;height:34px;border-radius:50%;background:rgba(201,168,76,.15);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1rem;margin-bottom:1rem}
+.why-item h4{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:500;line-height:1.2}
+
+/* ── REVIEWS ── */
+.reviews-head{text-align:center;margin-bottom:3rem;display:flex;flex-direction:column;align-items:center}
+.reviews-head .label-tag{justify-content:center}
+.reviews-rating{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:1.4rem;flex-wrap:wrap}
+.reviews-stars{color:var(--gold);font-size:1.6rem;letter-spacing:.15em}
+.reviews-score{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:var(--gold)}
+/* Google badge */
+.google-badge{display:inline-flex;align-items:center;gap:1rem;margin-top:1.6rem;padding:.85rem 1.4rem;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:50px;transition:all .35s;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);cursor:pointer}
+.google-badge:hover{background:rgba(255,255,255,.09);border-color:rgba(201,168,76,.5);transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,0,0,.3)}
+.gb-logo{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#fff;border-radius:50%;flex-shrink:0}
+.gb-text{display:flex;flex-direction:column;align-items:flex-start;line-height:1.2}
+.gb-top{display:flex;align-items:center;gap:.5rem}
+.gb-score{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--cream)}
+.gb-stars{color:#fbbc05;font-size:1rem;letter-spacing:.05em}
+.gb-sub{font-size:.72rem;letter-spacing:.04em;color:rgba(244,239,230,.55);margin-top:2px}
+.gb-arrow{color:var(--gold);font-size:1.1rem;transition:transform .3s;margin-left:.3rem}
+.google-badge:hover .gb-arrow{transform:translateX(4px)}
+.reviews-cta{display:flex;justify-content:center;gap:1rem;margin-top:2.5rem;flex-wrap:wrap}
+.reviews-count{font-size:.85rem;color:rgba(244,239,230,.55)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:1rem}
+.review-card{background:var(--glass);border:1px solid var(--border);border-radius:14px;padding:1.8rem}
+.review-stars{color:var(--gold);font-size:.9rem;letter-spacing:.1em;margin-bottom:1rem}
+.review-text{font-size:.92rem;font-weight:300;line-height:1.7;color:rgba(244,239,230,.8);font-style:italic;margin-bottom:1.4rem}
+.review-author{display:flex;align-items:center;gap:.8rem}
+.review-avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--pine));display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:600;color:var(--ink);font-size:1rem}
+.review-name{font-size:.85rem;font-weight:500}
+.review-meta{font-size:.72rem;color:rgba(244,239,230,.45)}
+
+/* ── GALLERY ── */
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:.8rem;margin-top:3rem}
+.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:10px;cursor:pointer;transition:transform .5s,filter .5s;filter:saturate(.95)}
+.gallery-grid img:hover{transform:scale(1.03);filter:saturate(1.1)}
+.g-tall{grid-row:span 2}
+.g-wide{grid-column:span 2}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);border-top:1px solid var(--border);padding:4rem 4rem 2rem}
+.footer-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3rem}
+.footer-logo{display:flex;align-items:center;gap:1rem;margin-bottom:1rem}
+.footer-logo img{height:64px;width:64px;object-fit:contain}
+.footer-logo .main{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600}
+.footer-logo .sub{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-top:3px}
+.footer-desc{font-size:.85rem;font-weight:300;color:rgba(244,239,230,.5);line-height:1.7;margin-bottom:1.2rem}
+.footer-pills{display:flex;gap:.5rem;flex-wrap:wrap}
+.footer-pill{display:flex;align-items:center;gap:.4rem;border-radius:50px;padding:.4rem .9rem;font-size:.75rem;border:.5px solid}
+.footer-col h5{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:500;margin-bottom:1.2rem;color:var(--gold-lt)}
+.footer-col a{display:block;font-size:.85rem;color:rgba(244,239,230,.55);padding:.4rem 0;transition:color .3s}
+.footer-col a:hover{color:var(--cream)}
+.footer-bottom{max-width:1240px;margin:3rem auto 0;padding-top:2rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:rgba(244,239,230,.4)}
+
+/* ── BOOKING MODAL (anchor section) ── */
+.book-section{background:var(--forest)}
+.book-wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.contact-items{display:flex;flex-direction:column;gap:.8rem;margin-top:1.5rem}
+.contact-item{display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;border-radius:13px;border:1px solid var(--border);transition:border-color .3s}
+.contact-item:hover{border-color:rgba(201,168,76,.5)}
+.ci-icon{width:46px;height:46px;flex-shrink:0;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1px solid var(--border);background:rgba(201,168,76,.08)}
+.ci-val{font-size:.95rem;color:var(--cream)}
+.ci-key{font-size:.72rem;color:rgba(244,239,230,.45);margin-top:2px;text-transform:uppercase;letter-spacing:.06em}
+.booking-form{background:var(--deep);border:1px solid var(--border);border-radius:var(--r);padding:2rem}
+.form-title{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:400;margin-bottom:1.4rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.form-group{margin-bottom:.9rem}
+.form-group label{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,239,230,.4);margin-bottom:.4rem;display:block}
+.form-group input,.form-group select{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:.7rem .9rem;color:var(--cream);font-size:.9rem;font-family:'Jost',sans-serif}
+.send-label{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,239,230,.4);margin:1.2rem 0 .7rem}
+.send-btns{display:flex;flex-direction:column;gap:.6rem}
+.send-btn{display:flex;align-items:center;justify-content:center;gap:.6rem;border:none;border-radius:50px;padding:.9rem;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:'Jost',sans-serif;color:var(--ink);text-decoration:none;transition:opacity .3s}
+.send-btn:hover{opacity:.88}
+
+
+/* ── NAV DROPDOWN ── */
+.nav-dropdown{position:relative}
+.nav-drop-trigger{display:flex;align-items:center;gap:.3rem}
+.drop-caret{font-size:.6rem;transition:transform .3s}
+.nav-dropdown:hover .drop-caret{transform:rotate(180deg)}
+.nav-dropdown-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(10px);background:rgba(10,22,16,.97);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border:1px solid var(--border);border-radius:14px;padding:.6rem;min-width:230px;opacity:0;visibility:hidden;transition:all .3s;box-shadow:0 16px 48px rgba(0,0,0,.5);margin-top:.5rem}
+.nav-dropdown:hover .nav-dropdown-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.nav-dropdown-menu a{display:block;padding:.7rem 1rem;font-size:.8rem;letter-spacing:.04em;text-transform:none;color:rgba(244,239,230,.7);border-radius:8px;transition:all .2s}
+.nav-dropdown-menu a:hover{background:rgba(201,168,76,.12);color:var(--gold-lt);padding-left:1.3rem}
+
+/* ── TOUR CARD CLICKABLE ── */
+.tour-card{cursor:pointer}
+
+
+/* ── LIGHTBOX ── */
+.lightbox{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(6,14,8,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);z-index:9999;display:none;align-items:center;justify-content:center;padding:2rem;cursor:zoom-out}
+.lightbox.open{display:flex;-webkit-animation:lbFade .3s ease;animation:lbFade .3s ease}
+.lightbox img{max-width:92vw;max-height:88vh;object-fit:contain;border-radius:12px;box-shadow:0 24px 80px rgba(0,0,0,.6)}
+.lightbox-close{position:absolute;top:1.5rem;right:2rem;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid var(--border);color:var(--cream);font-size:1.6rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s}
+.lightbox-close:hover{background:var(--gold);color:var(--ink)}
+@keyframes lbFade{from{opacity:0}to{opacity:1}}
+@-webkit-keyframes lbFade{from{opacity:0}to{opacity:1}}
+img.clickable{cursor:zoom-in}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  html,body{overflow-x:hidden;max-width:100vw}
+  nav{padding:.4rem 1.2rem;height:auto}
+  nav.scrolled{padding:.4rem 1.2rem}
+  .nav-logo img{height:60px;width:60px}
+  .nav-logo-text{display:none}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .hero{padding:0 1.5rem;min-height:560px}
+  .hero-content{padding-top:70px}
+  .hero h1{font-size:clamp(2rem,8vw,3rem)}
+  .hero-sub{font-size:.92rem}
+  .section{padding:3.5rem 1.5rem}
+  .tour-card{min-height:440px}
+  .tour-card-content{padding:1.8rem}
+  .tour-card.flip .tour-card-content{text-align:left}
+  .tour-tagline{font-size:.95rem;margin-bottom:.8rem}
+  .tour-route{font-size:.66rem}
+  .comfort-grid{grid-template-columns:1fr;gap:2.5rem}
+  .comfort-features{grid-template-columns:1fr 1fr}
+  .why-grid{grid-template-columns:1fr 1fr;gap:.8rem}
+  .reviews-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .g-wide{grid-column:span 2}
+  .g-tall{grid-row:span 1}
+  .book-wrap{grid-template-columns:1fr;gap:2.5rem}
+  .footer-grid{grid-template-columns:1fr;gap:2rem}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .form-row{grid-template-columns:1fr}
+  .private-benefits{gap:1rem 1.5rem}
+}
+</style>
+<style>
+/* ── ABOUT PAGE ── */
+.about-hero{height:60vh;min-height:440px;position:relative;display:flex;align-items:flex-end;overflow:hidden}
+.about-hero-bg{position:absolute;top:0;right:0;bottom:0;left:0;background:url('IMG_0960.JPG') center/cover no-repeat;-webkit-animation:heroZoom 20s ease-out forwards;animation:heroZoom 20s ease-out forwards}
+.about-hero-overlay{position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(to top,rgba(6,14,8,.97) 0%,rgba(6,14,8,.45) 55%,rgba(6,14,8,.3) 100%)}
+.about-hero-content{position:relative;z-index:5;padding:0 4rem 3.5rem;max-width:1240px;margin:0 auto;width:100%}
+.about-hero .crumb{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.about-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,6vw,5rem);font-weight:300;line-height:1.05;margin-bottom:.6rem}
+.about-hero .sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2.5vw,1.9rem);color:var(--gold-lt)}
+/* story */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.story-text p{font-size:1.02rem;font-weight:300;line-height:1.8;color:rgba(244,239,230,.78);margin-bottom:1.2rem}
+.story-text p:first-of-type{font-size:1.15rem;color:var(--cream)}
+.story-img{border-radius:var(--r);overflow:hidden;border:1px solid var(--border);position:relative}
+.story-img img{width:100%;height:480px;object-fit:cover;display:block}
+.story-img-cap{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(6,14,8,.92),transparent);padding:1.6rem 1.2rem .9rem;font-size:.82rem;color:var(--gold-lt);font-style:italic}
+/* stats */
+.about-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:4rem}
+.stat-box{text-align:center;padding:2rem 1rem;background:var(--glass);border:1px solid var(--border);border-radius:16px}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--gold);line-height:1}
+.stat-label{font-size:.82rem;letter-spacing:.06em;color:rgba(244,239,230,.6);margin-top:.6rem}
+/* team */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3.5rem}
+.team-card{background:var(--glass);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:all .4s}
+.team-card:hover{transform:translateY(-6px);border-color:rgba(201,168,76,.45);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.team-photo{width:100%;height:400px;object-fit:cover;object-position:center 42%;display:block;background:linear-gradient(135deg,var(--pine),var(--forest))}
+.team-photo-ph{width:100%;height:340px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--pine),var(--forest));font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:600;color:var(--gold);position:relative}
+.team-photo-ph::after{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:radial-gradient(circle at 50% 40%,rgba(201,168,76,.12),transparent 70%)}
+.team-info{padding:1.8rem}
+.team-name{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:500;margin-bottom:.2rem}
+.team-role{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.team-bio{font-size:.92rem;font-weight:300;line-height:1.7;color:rgba(244,239,230,.72);margin-bottom:1.2rem}
+.team-tags{display:flex;flex-wrap:wrap;gap:.45rem}
+.team-tags span{background:rgba(201,168,76,.08);border:1px solid var(--border);border-radius:50px;padding:.3rem .8rem;font-size:.72rem;color:rgba(244,239,230,.75)}
+/* values */
+.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3rem}
+.value-item{background:var(--glass);border:1px solid var(--border);border-radius:14px;padding:1.8rem 1.4rem;transition:all .4s}
+.value-item:hover{border-color:rgba(201,168,76,.45);transform:translateY(-4px)}
+.value-icon{font-size:1.8rem;margin-bottom:.9rem}
+.value-item h4{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;margin-bottom:.5rem}
+.value-item p{font-size:.86rem;font-weight:300;line-height:1.6;color:rgba(244,239,230,.65)}
+@media(max-width:960px){
+  .about-hero-content{padding:0 1.5rem 2.5rem}
+  .story-grid{grid-template-columns:1fr;gap:2.5rem}
+  .story-img img{height:340px}
+  .about-stats{grid-template-columns:1fr 1fr;gap:1rem}
+  .team-grid{grid-template-columns:1fr;gap:1.5rem}
+  .values-grid{grid-template-columns:1fr 1fr;gap:.8rem}
+}
+</style>
+</head>
+<body>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="banff-brilliance.html" class="mm-link"><span>Banff Brilliance</span><span class="mm-arr">→</span></a>
+  <a href="jasper-wilderness.html" class="mm-link"><span>Jasper Wilderness</span><span class="mm-arr">→</span></a>
+  <a href="southern-treasures.html" class="mm-link"><span>Southern Treasures</span><span class="mm-arr">→</span></a>
+  <a href="private-tours.html" class="mm-link"><span><span class="en">Private Tours</span><span class="ua">Приватні тури</span></span><span class="mm-arr">→</span></a>
+  <a href="index.html#comfort" class="mm-link"><span><span class="en">Our Vehicle</span><span class="ua">Транспорт</span></span><span class="mm-arr">→</span></a>
+  <a href="index.html" class="mm-link"><span><span class="en">Home</span><span class="ua">Головна</span></span><span class="mm-arr">→</span></a>
+  <div style="display:flex;gap:.6rem;margin-top:1.5rem">
+    <a href="https://wa.me/18259891322" class="footer-pill" style="background:rgba(37,211,102,.08);border-color:rgba(37,211,102,.3);color:rgba(37,211,102,.85)">💬 WhatsApp</a>
+    <a href="https://t.me/+18259891322" class="footer-pill" style="background:rgba(41,182,246,.08);border-color:rgba(41,182,246,.3);color:rgba(41,182,246,.85)">✈️ Telegram</a>
+    <a href="tel:+18259891322" class="footer-pill" style="background:rgba(201,168,76,.08);border-color:rgba(201,168,76,.3);color:rgba(244,239,230,.6)">📞 Call</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav" class="scrolled">
+  <a class="nav-logo" href="index.html">
+    <img src="logo.png" alt="Marian Adventure Tours">
+    <div class="nav-logo-text">
+      <span class="main">Marian Adventure</span>
+      <span class="sub"><span class="en">Canadian Rockies Tours</span><span class="ua">Тури Скелястими Горами</span></span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li class="nav-dropdown">
+      <a href="index.html#tours" class="nav-drop-trigger"><span class="en">Tours</span><span class="ua">Тури</span> <span class="drop-caret">▾</span></a>
+      <div class="nav-dropdown-menu">
+        <a href="banff-brilliance.html">Banff Brilliance</a>
+        <a href="jasper-wilderness.html">Jasper Wilderness</a>
+        <a href="southern-treasures.html">Southern Treasures</a>
+        <a href="private-tours.html"><span class="en">Private Tours</span><span class="ua">Приватні тури</span></a>
+      </div>
+    </li>
+    <li><a href="index.html#comfort"><span class="en">Our Vehicle</span><span class="ua">Транспорт</span></a></li>
+    <li><a href="about.html"><span class="en">About</span><span class="ua">Про нас</span></a></li>
+    <li><a href="index.html"><span class="en">Home</span><span class="ua">Головна</span></a></li>
+    <li><a href="#book" class="nav-book"><span class="en">Book Now</span><span class="ua">Бронювати</span></a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-wrap">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('ua')">УКР</button>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="about-hero-bg"></div>
+  <div class="about-hero-overlay"></div>
+  <div class="about-hero-content">
+    <div class="crumb"><a href="index.html" style="color:var(--gold)">Home</a> / <span class="en">About Us</span><span class="ua">Про нас</span></div>
+    <h1><span class="en">About Us</span><span class="ua">Про нас</span></h1>
+    <div class="sub"><span class="en">Sharing the Canadian Rockies, one journey at a time</span><span class="ua">Ділимося Канадськими Скелястими горами, одна подорож за раз</span></div>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="section">
+  <div class="section-inner">
+    <div class="story-grid">
+      <div class="story-text reveal">
+        <div class="label-tag"><span class="en">Our Story</span><span class="ua">Наша історія</span></div>
+        <h2 style="margin-bottom:1.5rem"><span class="en">How It All <em>Began</em></span><span class="ua">Як усе <em>почалося</em></span></h2>
+        <p>
+          <span class="en">It started with a bike ride. One summer, while cycling the winding road up to Moraine Lake, our founder Marian stopped at the shoreline, looked out over that impossible turquoise water framed by the Valley of the Ten Peaks, and thought: <em>people need to see this.</em></span>
+          <span class="ua">Усе почалося з велосипедної прогулянки. Одного літа, піднімаючись звивистою дорогою до озера Морейн, наш засновник Маріан зупинився на березі, поглянув на неймовірно бірюзову воду в обрамленні Долини Десяти Вершин і подумав: <em>люди мають це побачити.</em></span>
+        </p>
+        <p>
+          <span class="en">That single moment became Marian Adventure Tours — a company built not by a faceless corporation, but by travelers who genuinely love these mountains. We don't just drive a route; we share the places that moved us, at a pace that lets every guest breathe them in.</span>
+          <span class="ua">Цей єдиний момент став компанією Marian Adventure Tours — створеною не безликою корпорацією, а мандрівниками, які щиро люблять ці гори. Ми не просто проїжджаємо маршрут — ми ділимося місцями, що вразили нас, у темпі, який дозволяє кожному гостю насолодитися ними сповна.</span>
+        </p>
+        <p>
+          <span class="en">Today we are a small team of tourism professionals, united by one belief: that the right journey, with the right people, stays with you for a lifetime.</span>
+          <span class="ua">Сьогодні ми — невелика команда професіоналів туризму, об'єднаних однією вірою: правильна подорож із правильними людьми залишається з тобою на все життя.</span>
+        </p>
+      </div>
+      <div class="story-img reveal d1">
+        <img src="team-all.jpg" alt="Marian Adventure Tours team at Moraine Lake">
+        <div class="story-img-cap"><span class="en">The team at Moraine Lake — where it all began</span><span class="ua">Команда біля озера Морейн — там, де все почалося</span></div>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="about-stats reveal">
+      <div class="stat-box"><div class="stat-num">37+</div><div class="stat-label"><span class="en">Countries Explored</span><span class="ua">Країн відвідано</span></div></div>
+      <div class="stat-box"><div class="stat-num">3</div><div class="stat-label"><span class="en">Tourism Professionals</span><span class="ua">Професіонали туризму</span></div></div>
+      <div class="stat-box"><div class="stat-num">13</div><div class="stat-label"><span class="en">Max Group Size</span><span class="ua">Макс. розмір групи</span></div></div>
+      <div class="stat-box"><div class="stat-num">100%</div><div class="stat-label"><span class="en">Passion for the Rockies</span><span class="ua">Любові до гір</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEET THE TEAM -->
+<section class="section" style="background:var(--deep)">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+      <div class="label-tag"><span class="en">Meet the Team</span><span class="ua">Наша команда</span></div>
+      <h2><span class="en">The People Behind <em>Your Journey</em></span><span class="ua">Люди, що створюють <em>вашу подорож</em></span></h2>
+      <p class="section-intro" style="text-align:center"><span class="en">Three travelers, one shared love for the mountains — and the experience to make your trip unforgettable.</span><span class="ua">Троє мандрівників, одна спільна любов до гір — і досвід, щоб зробити вашу подорож незабутньою.</span></p>
+    </div>
+    <div class="team-grid">
+
+      <!-- MARIAN -->
+      <div class="team-card reveal">
+        <img class="team-photo" src="marian.jpg" alt="Marian — Founder & Tour Manager">
+        <div class="team-info">
+          <div class="team-name">Marian</div>
+          <div class="team-role"><span class="en">Founder & Tour Manager</span><span class="ua">Засновник та менеджер турів</span></div>
+          <p class="team-bio">
+            <span class="en">At 29, Marian has turned a lifelong passion for travel into a career. He holds a Master's degree in Tourism from Ukraine, where he qualified as a professional tourism manager. In over three years living in Canada he has explored the country end to end — and visited 37 countries along the way. The idea for this company was born on a bike ride to Moraine Lake, and his mission has been the same ever since: to share the beauty of the Rockies with every guest who climbs aboard.</span>
+            <span class="ua">У свої 29 Маріан перетворив життєву пристрасть до подорожей на справу життя. Він має ступінь магістра з туризму, здобутий в Україні, де отримав кваліфікацію професійного менеджера туризму. За понад три роки життя в Канаді він об'їздив країну від краю до краю — і відвідав 37 країн світу. Ідея компанії народилася під час велопрогулянки до озера Морейн, і відтоді його місія незмінна: ділитися красою Скелястих гір із кожним гостем.</span>
+          </p>
+          <div class="team-tags">
+            <span>🎓 <span class="en">M.A. Tourism</span><span class="ua">Магістр туризму</span></span>
+            <span>🌍 37 <span class="en">countries</span><span class="ua">країн</span></span>
+            <span>⛰ <span class="en">Mountains & travel</span><span class="ua">Гори та подорожі</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MYKHAILO -->
+      <div class="team-card reveal d1">
+        <img class="team-photo" src="mykhailo.jpg" alt="Mykhailo — Tour Manager & Guide">
+        <div class="team-info">
+          <div class="team-name">Mykhailo</div>
+          <div class="team-role"><span class="en">Tour Manager & Guide</span><span class="ua">Менеджер турів та гід</span></div>
+          <p class="team-bio">
+            <span class="en">Mykhailo shares Marian's professional background, holding a degree as a tourism manager. A true adventurer at heart, he has travelled to 35 countries and lives for the outdoors — active recreation, sport, and the kind of long road trips where the journey matters as much as the destination. Warm and easy to talk to, he's the one who keeps the conversation flowing and the energy high from the first pickup to the final drop-off.</span>
+            <span class="ua">Михайло має таку ж професійну освіту, як і Маріан — диплом менеджера з туризму. Справжній шукач пригод, він відвідав 35 країн і живе активним відпочинком — спортом, подорожами та довгими автоподорожами, де дорога важить не менше за пункт призначення. Теплий і відкритий у спілкуванні, саме він підтримує невимушену атмосферу та гарний настрій від першого забору до останньої висадки.</span>
+          </p>
+          <div class="team-tags">
+            <span>🎓 <span class="en">Tourism Manager</span><span class="ua">Менеджер туризму</span></span>
+            <span>🌍 35 <span class="en">countries</span><span class="ua">країн</span></span>
+            <span>🚐 <span class="en">Road trips</span><span class="ua">Автоподорожі</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VADYM -->
+      <div class="team-card reveal d2">
+        <img class="team-photo" src="vadym.jpg" alt="Vadym — Tour Guide & Outdoor Specialist">
+        <div class="team-info">
+          <div class="team-name">Vadym</div>
+          <div class="team-role"><span class="en">Tour Guide & Outdoor Specialist</span><span class="ua">Гід та фахівець з активного відпочинку</span></div>
+          <p class="team-bio">
+            <span class="en">At 27 and in his fourth year in Canada, Vadym is most at home in the wild. Hiking, camping and fishing aren't just hobbies for him — they're a way of life, and they've given him an intimate knowledge of Alberta's trails, lakes and hidden corners. His calm, practical nature and love of the outdoors make him the perfect guide for guests who want to truly connect with the landscape.</span>
+            <span class="ua">У свої 27 і на четвертому році життя в Канаді Вадим почувається найкраще серед дикої природи. Хайкінг, кемпінг і рибалка для нього не просто хобі — це спосіб життя, що подарував йому глибоке знання стежок, озер і прихованих куточків Альберти. Спокійний, практичний характер і любов до природи роблять його ідеальним гідом для гостей, які хочуть по-справжньому відчути ці краєвиди.</span>
+          </p>
+          <div class="team-tags">
+            <span>🥾 <span class="en">Hiking</span><span class="ua">Хайкінг</span></span>
+            <span>🏕 <span class="en">Camping</span><span class="ua">Кемпінг</span></span>
+            <span>🎣 <span class="en">Fishing</span><span class="ua">Рибалка</span></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+      <div class="label-tag"><span class="en">What We Stand For</span><span class="ua">Наші цінності</span></div>
+      <h2><span class="en">Why Travel <em>With Us</em></span><span class="ua">Чому подорожувати <em>з нами</em></span></h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-item reveal"><div class="value-icon">👥</div><h4><span class="en">Small Groups</span><span class="ua">Малі групи</span></h4><p><span class="en">Maximum 13 guests means a personal experience, never a crowded bus.</span><span class="ua">Максимум 13 гостей — це особистий досвід, а не переповнений автобус.</span></p></div>
+      <div class="value-item reveal d1"><div class="value-icon">🎓</div><h4><span class="en">Real Expertise</span><span class="ua">Справжній досвід</span></h4><p><span class="en">Tourism-educated guides who know these mountains inside and out.</span><span class="ua">Гіди з туристичною освітою, які знають ці гори досконало.</span></p></div>
+      <div class="value-item reveal d2"><div class="value-icon">❤️</div><h4><span class="en">Genuine Passion</span><span class="ua">Щира пристрасть</span></h4><p><span class="en">We guide the places we love — and it shows in every tour.</span><span class="ua">Ми показуємо місця, які любимо — і це відчувається в кожному турі.</span></p></div>
+      <div class="value-item reveal d3"><div class="value-icon">✓</div><h4><span class="en">Licensed & Trusted</span><span class="ua">Ліцензовано</span></h4><p><span class="en">A fully licensed commercial operator with Moraine Lake Road access.</span><span class="ua">Повністю ліцензований оператор з доступом до Moraine Lake Road.</span></p></div>
+    </div>
+    <div class="reveal" style="text-align:center;margin-top:3rem">
+      <a href="index.html#tours" class="btn-gold"><span class="en">Explore Our Tours</span><span class="ua">Переглянути тури</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">
+        <img src="logo.png" alt="Marian Adventure Tours">
+        <div>
+          <span class="main">Marian Adventure Tours</span>
+          <span class="sub"><span class="en">Canadian Rockies · Alberta</span><span class="ua">Канадські Скелясті · Альберта</span></span>
+        </div>
+      </div>
+      <p class="footer-desc"><span class="en">Small group & private Mercedes Sprinter tours to Banff, Moraine Lake, Lake Louise, Jasper & Waterton. Licensed commercial operator with Moraine Lake Road access.</span><span class="ua">Тури малими групами та приватні тури у Mercedes Sprinter до Банфу, Морейн Лейку, Лейк Луїз, Джасперу та Вотертону. Ліцензований оператор з доступом до Moraine Lake Road.</span></p>
+      <div class="footer-pills">
+        <a href="mailto:marianadventuretours@gmail.com" class="footer-pill" style="background:rgba(201,168,76,.08);border-color:rgba(201,168,76,.3);color:rgba(244,239,230,.6)">📧 Email</a>
+        <a href="https://wa.me/18259891322" class="footer-pill" style="background:rgba(37,211,102,.08);border-color:rgba(37,211,102,.3);color:rgba(37,211,102,.85)">💬 WhatsApp</a>
+        <a href="https://t.me/+18259891322" class="footer-pill" style="background:rgba(41,182,246,.08);border-color:rgba(41,182,246,.3);color:rgba(41,182,246,.85)">✈️ Telegram</a>
+        <a href="tel:+18259891322" class="footer-pill" style="background:rgba(201,168,76,.08);border-color:rgba(201,168,76,.3);color:rgba(244,239,230,.6)">📞 Call</a>
+        <a href="https://www.instagram.com/marianadventuretours/" target="_blank" rel="noopener" class="footer-pill" style="background:rgba(225,48,108,.1);border-color:rgba(225,48,108,.35);color:rgba(244,180,200,.9)">📷 Instagram</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5><span class="en">Tours</span><span class="ua">Тури</span></h5>
+      <a href="banff-brilliance.html">Banff Brilliance</a>
+      <a href="jasper-wilderness.html">Jasper Wilderness</a>
+      <a href="southern-treasures.html">Southern Treasures</a>
+      <a href="private-tours.html"><span class="en">Private Tours</span><span class="ua">Приватні тури</span></a>
+    </div>
+    <div class="footer-col">
+      <h5><span class="en">Company</span><span class="ua">Компанія</span></h5>
+      <a href="index.html#why"><span class="en">Why Choose Us</span><span class="ua">Чому ми</span></a>
+      <a href="index.html#gallery"><span class="en">Gallery</span><span class="ua">Галерея</span></a>
+      <a href="index.html#reviews"><span class="en">Reviews</span><span class="ua">Відгуки</span></a>
+      <a href="#book"><span class="en">Contact & Book</span><span class="ua">Контакти</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Marian Adventure Tours · <span class="en">All rights reserved</span><span class="ua">Всі права захищено</span></div>
+    <div>marianadventuretours.com</div>
+  </div>
+</footer>
+
+<script>
+function setLang(l){
+  document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.remove('active');});
+  document.querySelector('.lang-btn[onclick="setLang(\''+l+'\')"]').classList.add('active');
+  document.body.classList.toggle('ua-mode', l==='ua');
+}
+var menuOpen=false;
+function toggleMenu(){menuOpen=!menuOpen;document.getElementById('mobileMenu').classList.toggle('open',menuOpen);document.getElementById('hamburger').classList.toggle('open',menuOpen);}
+function closeMenu(){menuOpen=false;document.getElementById('mobileMenu').classList.remove('open');document.getElementById('hamburger').classList.remove('open');}
+window.addEventListener('scroll',function(){var n=document.getElementById('mainNav');if(n)n.classList.toggle('scrolled',window.scrollY>60);});
+try{
+  var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
+}catch(e){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible');});}
+// Safety: ensure all reveal elements become visible even if observer misses them
+setTimeout(function(){document.querySelectorAll('.reveal:not(.visible)').forEach(function(el){el.classList.add('visible');});},1500);
+</script>
+</body>
+</html>
