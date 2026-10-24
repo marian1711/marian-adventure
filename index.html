@@ -900,5 +900,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbo
   <button class="lightbox-close" onclick="closeLightbox()">✕</button>
   <img id="lightbox-img" src="" alt="">
 </div>
+<!-- Netlify Forms: early-booking signup (used by promo-popup.js) -->
+<form name="early-booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="email" name="email"><input type="text" name="lang"><input type="text" name="page"><input name="bot-field">
+</form>
+<script src="promo-popup.js" defer></script>
 </body>
 </html>
