@@ -1,20 +1,16 @@
 /* Moraine Lake closure + early-booking signup popup
-   Shown once per visitor. Dismissed → hidden 7 days. Subscribed → never again.
+   Shown on every new visit to the site. While browsing pages in the same visit it is
+   not shown again after being closed. Visitors who subscribed never see it again.
    Emails are collected by Netlify Forms (form name: "early-booking"). */
 (function () {
-  var KEY = 'mat_promo_2027';
-  var HIDE_DAYS = 7;
+  var SUB_KEY = 'mat_promo_subscribed';   // localStorage: subscribed, permanent
+  var SEEN_KEY = 'mat_promo_closed';      // sessionStorage: closed during this visit
 
-  function store(get, val) {
-    try {
-      if (get) return localStorage.getItem(KEY);
-      localStorage.setItem(KEY, val);
-    } catch (e) { return null; }
-  }
+  function get(st, k) { try { return window[st].getItem(k); } catch (e) { return null; } }
+  function set(st, k, v) { try { window[st].setItem(k, v); } catch (e) {} }
 
-  var saved = store(true);
-  if (saved === 'subscribed') return;
-  if (saved && Date.now() < Number(saved)) return;
+  if (get('localStorage', SUB_KEY)) return;
+  if (get('sessionStorage', SEEN_KEY)) return;
 
   var css = '' +
     '#matPromo{position:fixed;inset:0;z-index:1000;display:flex;align-items:flex-start;justify-content:center;padding:24px 16px;' +
@@ -131,7 +127,7 @@
     wrap.innerHTML = html;
 
     function close(remember) {
-      if (remember !== false) store(false, String(Date.now() + HIDE_DAYS * 864e5));
+      if (remember !== false) set('sessionStorage', SEEN_KEY, '1');
       wrap.classList.remove('show');
       document.body.classList.remove('mp-lock');
       setTimeout(function () { if (wrap.parentNode) wrap.parentNode.removeChild(wrap); }, 500);
@@ -173,7 +169,7 @@
         body: body
       }).then(function (r) {
         if (!r.ok) throw new Error(r.status);
-        store(false, 'subscribed');
+        set('localStorage', SUB_KEY, '1');
         if (typeof gtag === 'function') gtag('event', 'generate_lead', { method: 'early_booking_popup' });
         wrap.querySelector('#mpForm').style.display = 'none';
         wrap.querySelector('#mpDone').style.display = 'block';
